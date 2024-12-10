@@ -1,0 +1,256 @@
+<!--
+1. HTML es un lenguaje de marcado basado en etiquetas
+2. HTML Hypert text markup language
+3. NO ES UN LENGUAJE DE PROGRAMACIÓN
+4. La etiqueta DOCTYPE, Le dice al navegador que es un documento de tipo html
+5. El atributo lang indica el lenguaje en el que está hecha la páginaweb o sitio web
+6. Estructura básica de una página web: header(logo, título, menú de navegación, inicio sesión), main(toda la estructura principal de la página web), footer(redes, derechos, mapa sitio, mini formulario de contacto)
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!--Contiene información de metadatos-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Tienda Deportiva UE</title>
+  </head>
+  <body>
+    <style>
+      label {
+        background-color: darkblue;
+      }
+      h1 {
+        background-color: yellow;
+      }
+    </style>
+    <!--TOdo lo que está en el body se muestra en navegador-->
+    <header
+      id="header"
+      class="header"
+      style="background-color: rgb(56, 65, 184); color: rgb(224, 240, 0)"
+    >
+      <!--Header va a estar dividido en 3 partes: logo,menu, inicio sesión-->
+      <div class="container">
+        <div class="logo">
+          <img src="" alt="logo de la tienda" />
+        </div>
+        <div class="menu">
+          <nav>
+            <ul class="item">
+              <li><a href="">Principal</a></li>
+              <li><a href="">Historia</a></li>
+              <li><a href="">¿Quienes Somos?</a></li>
+              <li><a href="">Servicios</a></li>
+              <li><a href="">Productos en Oferta</a></li>
+              <li><a href="">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="sesion">
+          <form action="">
+            <label for="mail">Correo:</label>
+            <input type="email" name="mail" id="mail" />
+            <label for="pwd">Contraseña</label>
+            <input type="password" name="pwd" id="pwd" />
+            <button type="button">Aceptar</button>
+            <button type="button">Cancelar</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main class="main" id="main">
+      <section class="container_p">
+        <h1>Consulta la MEJOR OFERTA DEL DÍA</h1>
+        <!--Etiqueta de encabezados va desde h1 al h6, siendo h1 la más grande-->
+        <p class="offert">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aut
+          suscipit nemo deserunt aliquid. Dignissimos fugiat possimus doloribus
+          magni natus at fuga assumenda rerum! Velit facere voluptatem aut sunt
+          odit. Maiores voluptas tempora quidem quae at beatae incidunt
+          obcaecati dolores, rem nam officia autem, porro, doloribus deleniti
+          nostrum repellendus nulla inventore eum! A laboriosam est, vel tempora
+          expedita consequuntur et. Accusantium delectus, ullam provident
+          aspernatur repellat blanditiis quas aut facilis expedita! Vel error,
+          id, reprehenderit architecto adipisci consectetur sit optio in minus
+          eius corporis rerum ex perspiciatis, fugiat nulla eligendi.
+        </p>
+        <div class="container_button">
+          <button type="button" class="button_lp">Sí quiero ver</button>
+          <button type="button" class="button_lp">Super Ofertas</button>
+        </div>
+      </section>
+      <section class="container container_history">
+        <h2>Historia</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+          sed! Illum recusandae consectetur ipsa et quam nemo deleniti quo. Odio
+          fuga atque placeat est quis labore possimus modi dignissimos quod!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rem
+          cumque officiis omnis consequuntur, porro accusantium nobis quo libero
+          necessitatibus placeat ducimus commodi unde saepe quis doloremque
+          architecto aperiam quibusdam. Ut alias minus quaerat voluptates
+          ducimus! Beatae repellat libero unde pariatur ullam voluptatum
+          praesentium ut, doloribus voluptas ducimus excepturi esse. Accusantium
+          enim maxime magnam aliquid, magni porro ad velit pariatur.
+          Consequuntur distinctio facilis reiciendis debitis voluptate deserunt,
+          obcaecati eum enim suscipit quaerat sit reprehenderit dicta architecto
+          dolore illum temporibus labore ut consectetur laboriosam quia eligendi
+          repudiandae autem. Beatae, perspiciatis ea. Lorem ipsum dolor, sit
+          amet consectetur adipisicing elit. Maiores perferendis perspiciatis
+          voluptate ab rerum? Perspiciatis aliquid beatae ducimus ipsam quisquam
+          blanditiis autem consectetur provident nesciunt iure? Quas reiciendis
+          cum cupiditate. Nisi ad tempora sint voluptates, in, excepturi neque
+          praesentium sequi nobis sapiente optio quos deserunt libero delectus
+          ipsam laborum quasi quae officia commodi. Temporibus molestias
+          maiores, voluptatum ex necessitatibus error? Delectus iure minima
+          mollitia harum non reiciendis rem, quaerat, sint magnam repellat ullam
+          tempore quos sunt distinctio dolores cum repudiandae excepturi earum a
+          odio. Nisi, cupiditate. Ratione tempore nihil officiis.
+        </p>
+        <button type="button" class="up">Arriba</button>
+      </section>
+      <section class="container container_quienes">
+        <h2 class="sub-title">¿Quienes Somos?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
+          fugiat placeat fuga eveniet soluta id suscipit dicta porro eligendi
+          quam eius, illo voluptas autem qui at, quasi quia? Perspiciatis,
+          temporibus. Exercitationem veniam est repellat modi nemo atque
+          tenetur, vitae aperiam doloribus! Accusamus, maxime exercitationem
+          eius quis, voluptate doloribus in explicabo nam accusantium a commodi
+          tempore corrupti architecto, quisquam est odio. Voluptate et
+          blanditiis laboriosam iste sed beatae, alias optio. Odit, sint hic.
+          Iusto excepturi, cum eveniet autem, aspernatur minima ad molestias,
+          architecto molestiae laudantium dolore quod libero quisquam ex
+          officiis? Exercitationem esse ut repellendus tempora placeat impedit
+          culpa autem totam ea, est aperiam laudantium sunt quisquam quos
+          repudiandae cumque consectetur necessitatibus veritatis in quasi
+          molestias nulla. Ut enim aliquam qui. Necessitatibus repellat officia
+          facilis explicabo. Aliquid sequi alias, illum dolor reprehenderit at
+          consectetur distinctio quisquam ut illo, ad quam sit provident
+          numquam. In repellendus iusto doloribus odio deserunt sapiente ipsum.
+        </p>
+        <button type="button" class="up">Arriba</button>
+      </section>
+      <section class="container container_services">
+        <h2 class="sub-title">Servicios</h2>
+        <div class="service">
+          <i class="fa-solid fa-shirt"></i>
+          <h3>Sastrería y Arreglo de Ropa</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quo
+            labore similique maiores sint porro fugiat. Ipsum, aliquam modi?
+            Porro vel enim cumque quo qui sapiente, alias eum facere tempora.
+          </p>
+        </div>
+        <div class="service">
+          <i class="fa-solid fa-shoe-prints"></i>
+          <h3>Persolización de Ropa y Zapatos</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quo
+            labore similique maiores sint porro fugiat. Ipsum, aliquam modi?
+            Porro vel enim cumque quo qui sapiente, alias eum facere tempora.
+          </p>
+        </div>
+        <div class="service">
+          <i class="fa-brands fa-bluesky"></i>
+          <h3>Accesorios y MASS+</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quo
+            labore similique maiores sint porro fugiat. Ipsum, aliquam modi?
+            Porro vel enim cumque quo qui sapiente, alias eum facere tempora.
+          </p>
+        </div>
+        <button type="button" class="up">Arriba</button>
+      </section>
+      <section class="container container_products">
+        <!--Consumo de API-->
+        <h2 class="sub-title">Productos</h2>
+        <ul class="list-group" id="list-group">
+          <template id="template">
+            <div class="card_body">
+              <li class="list-group">
+                <p id="code">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+                  quibusdam omnis blanditiis maxime aliquid reprehenderit esse
+                  praesentium exercitationem doloribus adipisci ad laboriosam,
+                  ut mollitia, tenetur reiciendis nihil veritatis excepturi
+                  dolor.
+                </p>
+                <a href="">${element}</a>
+                <p id="detail"></p>
+              </li>
+            </div>
+          </template>
+        </ul>
+        <button type="button" class="up">Arriba</button>
+      </section>
+      <section class="container container_contact">
+        <h2 class="sub-title">Contacto</h2>
+        <form id="form" class="form">
+          <label for="names">Nombres:</label>
+          <input type="text" id="names" />
+          <label for="lastNames">Apellidos:</label>
+          <input type="text" id="lastNames" />
+          <label for="mail2">Correo Electrónico:</label>
+          <input type="email" id="mail2" />
+          <label for="celphone">Celular:</label>
+          <input type="number" id="celphone" /><br />
+          <div class="check">
+            <input class="checkPolitica" type="checkbox" id="checkPolitica" />
+            <label class="labelPolitica" for="checkPolitica"> </label>
+          </div>
+          <p class="labelPolitica">Polítia de Datos</p>
+          <button type="submit" id="btnSend" class="button_send">Enviar</button>
+          <button type="reset" id="btnClear" class="button_clear">
+            Limpiar
+          </button>
+        </form>
+        <iframe
+          src="https://es.wikipedia.org/wiki/Ropa"
+          style="border: 2"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          width="300"
+          height="250"
+        ></iframe>
+        <!--Mapa de ubicación-->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.785140543742!2d-74.0834356261079!3d4.632384042248263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a0f9bb0ce7%3A0x5d71ff487837183c!2sUniempresarial!5e0!3m2!1ses!2sco!4v1733503823325!5m2!1ses!2sco"
+          width="300"
+          height="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <button type="button" class="up">Arriba</button>
+      </section>
+    </main>
+    <footer>
+      <section class="container_footer">
+        <h2 class="subTitle">Derechos Reservados Money Fashion Shop</h2>
+        <p>Sígueme en mis redes sociales</p>
+        <ul class="social_net">
+          <li>
+            <a href="">
+              <img class="nets" src="" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="nets" src="" alt="" />
+            </a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+    <!--Todos los scripts se van a colocar al pie del cierre de la etiqueta body-->
+    <script
+      src="https://kit.fontawesome.com/482a4222a7.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
